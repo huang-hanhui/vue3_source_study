@@ -80,6 +80,7 @@ const createValidator = (target,validator) => {
     return new Proxy(target,{
         _validator: validator,
        /*
+       *    target-目标对象 key-属性名 value-属性值 proxy-代理对象本身 就是 new Proxy(target,{})
        *    箭头函数  set: (target,key,value,proxy) =>{}
        *    普通函数  set: function (target,key,value,proxy){}
        *    缩写函数  set(target,key,value,proxy){}
