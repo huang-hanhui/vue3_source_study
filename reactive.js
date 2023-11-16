@@ -39,4 +39,6 @@ const userInfo = reactive({
 
 console.log(userInfo.name)
 userInfo.name = "zhangsan"
+// 新增属性 再次触发解决了 vue2 中的问题
+userInfo.myLove = "liukexin"
 // console.log(userInfo)
